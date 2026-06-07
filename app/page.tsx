@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
-const Spreadsheet = dynamic(() => import('./Spreadsheet'), {
+const Spreadsheet = dynamic(() => import('./(components)/Spreadsheet'), {
   ssr: false,
   loading: () => <div>Loading spreadsheet…</div>,
 });
