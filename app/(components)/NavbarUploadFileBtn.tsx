@@ -14,7 +14,7 @@ export default function NavbarUploadFileBtn() {
     const onPick = () => fileRef.current?.click();
 
     const newFile = () => {
-        const padded = padSheet([[]], 20, 10);
+        const padded = padSheet([[]], 100, 10);
         setData(padded)
         sheetRef.current.setData(padded);
 
@@ -33,7 +33,7 @@ export default function NavbarUploadFileBtn() {
 
     try {
         const parsed = await importFile(file);
-        const padded = padSheet(parsed, 20, 10);
+        const padded = padSheet(parsed, 100, 10);
         // update context state
         setData(padded);
         // imperative update to the Sheet component if available
