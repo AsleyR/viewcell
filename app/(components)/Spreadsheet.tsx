@@ -1,7 +1,7 @@
 "use client"
 
 import Sheet from "react-spread-sheet-excel";
-import { useSheetData } from "./(context)/SheetDataContext";
+import { useSheetData } from "../(context)/SheetDataContext";
 
 export default function SheetArea() {
   const { data, setData, sheetRef } = useSheetData();
